@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "雨课堂自动连播",
+  "version": "{{VERSION}}",
+  "description": "雨课堂课程页通用：自动连播，按左侧目录跳到最近的未完成视频，没展开的知识点也会进去补",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://changjiang.yuketang.cn/*",
+        "https://*.yuketang.cn/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_origin_as_fallback": true
+    }
+  ]
+}

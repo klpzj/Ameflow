@@ -1,0 +1,17 @@
+{
+  "name": "ameflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "雨课堂课程页自动连播脚本（Edge 扩展 + Tampermonkey 油猴脚本，同一份源码）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/content.js && node --check edge-ext/content.js",
+    "package": "node scripts/build.mjs && node scripts/package.mjs",
+    "release": "npm run build && npm run check && npm run package"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

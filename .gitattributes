@@ -1,0 +1,7 @@
+# 统一用 LF：CI 在 Linux 上校验 edge-ext 与 src 一致性，换行符不同会误报
+* text=auto eol=lf
+
+*.zip binary
+*.png binary
+*.jpg binary
+*.ico binary

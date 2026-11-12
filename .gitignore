@@ -1,0 +1,18 @@
+node_modules/
+
+# 构建产物：npm run build / package 生成
+dist/
+release/
+
+# 本地打包的 zip（用 npm run package 重新生成）
+*.zip
+
+# WorkBuddy 的工作记录（不属于项目内容）
+.workbuddy/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
